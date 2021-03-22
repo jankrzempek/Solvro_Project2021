@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD075BF9254AFFE600C12101 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD075BF8254AFFE600C12101 /* WelcomeViewController.swift */; };
+		DD0FFF1A254CE3820080D5FF /* RickAndMortyDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0FFF19254CE3820080D5FF /* RickAndMortyDataModel.swift */; };
+		DD1D8B2E254DF0F600FB4E4C /* DetailEpisodeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1D8B2D254DF0F600FB4E4C /* DetailEpisodeTableViewController.swift */; };
+		DD20573F2543185700E5DE3B /* TableEpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20573E2543185700E5DE3B /* TableEpisodeViewController.swift */; };
+		DD3562792541C1010033669B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3562782541C1010033669B /* AppDelegate.swift */; };
+		DD35627B2541C1010033669B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD35627A2541C1010033669B /* SceneDelegate.swift */; };
+		DD3562802541C1010033669B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD35627E2541C1010033669B /* Main.storyboard */; };
+		DD3562852541C1040033669B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD3562842541C1040033669B /* Assets.xcassets */; };
+		DD3562882541C1040033669B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD3562862541C1040033669B /* LaunchScreen.storyboard */; };
+		DD3562922541C2FE0033669B /* rick-morty-swift-api in Frameworks */ = {isa = PBXBuildFile; productRef = DD3562912541C2FE0033669B /* rick-morty-swift-api */; };
+		DD3562952541C65B0033669B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3562942541C65B0033669B /* TableViewController.swift */; };
+		DD3562992541C9230033669B /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3562982541C9230033669B /* CharacterTableViewCell.swift */; };
+		DD35629C2541D5A50033669B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD35629B2541D5A50033669B /* DetailViewController.swift */; };
+		DD3562A42541E3D60033669B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DD3562A32541E3D60033669B /* Kingfisher */; };
+		DD5FEEE32569E37C008020A3 /* Colour.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD5FEEE22569E37C008020A3 /* Colour.xcassets */; };
+		DD82839C25470B9A0093D252 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD82839A25470B9A0093D252 /* Model.xcdatamodeld */; };
+		DD92C842256950AB001228D5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD92C844256950AB001228D5 /* Localizable.strings */; };
+		DDC9C07B260515EA0062676E /* Solvro_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC9C07A260515EA0062676E /* Solvro_ProjectTests.swift */; };
+		DDD4ABF72608B7F5001ADF86 /* EpisodeOfCharacterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD4ABF62608B7F5001ADF86 /* EpisodeOfCharacterTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDC9C07D260515EA0062676E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD35626D2541C1010033669B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD3562742541C1010033669B;
+			remoteInfo = Solvro_Project;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD075BF8254AFFE600C12101 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		DD0FFF19254CE3820080D5FF /* RickAndMortyDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyDataModel.swift; sourceTree = "<group>"; };
+		DD1D8B2D254DF0F600FB4E4C /* DetailEpisodeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEpisodeTableViewController.swift; sourceTree = "<group>"; };
+		DD20573E2543185700E5DE3B /* TableEpisodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableEpisodeViewController.swift; sourceTree = "<group>"; };
+		DD3562752541C1010033669B /* Solvro_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Solvro_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD3562782541C1010033669B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD35627A2541C1010033669B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DD35627F2541C1010033669B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD3562842541C1040033669B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD3562872541C1040033669B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD3562892541C1040033669B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD3562942541C65B0033669B /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		DD3562982541C9230033669B /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
+		DD35629B2541D5A50033669B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		DD5FEEDC2569B51E008020A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		DD5FEEE22569E37C008020A3 /* Colour.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colour.xcassets; sourceTree = "<group>"; };
+		DD82839B25470B9A0093D252 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		DD92C843256950AB001228D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DDC9C078260515EA0062676E /* Solvro_ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Solvro_ProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDC9C07A260515EA0062676E /* Solvro_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solvro_ProjectTests.swift; sourceTree = "<group>"; };
+		DDC9C07C260515EA0062676E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDD4ABF62608B7F5001ADF86 /* EpisodeOfCharacterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeOfCharacterTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD3562722541C1010033669B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD3562A42541E3D60033669B /* Kingfisher in Frameworks */,
+				DD3562922541C2FE0033669B /* rick-morty-swift-api in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC9C075260515EA0062676E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD075BF3254AFD2C00C12101 /* EpisodeTab */ = {
+			isa = PBXGroup;
+			children = (
+				DD20573E2543185700E5DE3B /* TableEpisodeViewController.swift */,
+			);
+			path = EpisodeTab;
+			sourceTree = "<group>";
+		};
+		DD075BF4254AFD6500C12101 /* CharacterTab */ = {
+			isa = PBXGroup;
+			children = (
+				DD3562982541C9230033669B /* CharacterTableViewCell.swift */,
+				DD3562942541C65B0033669B /* TableViewController.swift */,
+			);
+			path = CharacterTab;
+			sourceTree = "<group>";
+		};
+		DD075BF6254AFDE800C12101 /* CharacterTabInDetail */ = {
+			isa = PBXGroup;
+			children = (
+				DD35629B2541D5A50033669B /* DetailViewController.swift */,
+			);
+			path = CharacterTabInDetail;
+			sourceTree = "<group>";
+		};
+		DD1D8B34254E0D1000FB4E4C /* EpisodeTabInDetail */ = {
+			isa = PBXGroup;
+			children = (
+				DD1D8B2D254DF0F600FB4E4C /* DetailEpisodeTableViewController.swift */,
+			);
+			path = EpisodeTabInDetail;
+			sourceTree = "<group>";
+		};
+		DD1D8B3E254F976800FB4E4C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD35627E2541C1010033669B /* Main.storyboard */,
+				DD3562862541C1040033669B /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DD1D8B3F254F97A500FB4E4C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD3562782541C1010033669B /* AppDelegate.swift */,
+				DD35627A2541C1010033669B /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD1D8B41254F97C500FB4E4C /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				DD82839A25470B9A0093D252 /* Model.xcdatamodeld */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		DD1D8B42254F97DF00FB4E4C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD0FFF19254CE3820080D5FF /* RickAndMortyDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DD1D8B44254F97FB00FB4E4C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DDC9C086260519530062676E /* WelcomeTab */,
+				DD075BF3254AFD2C00C12101 /* EpisodeTab */,
+				DD1D8B34254E0D1000FB4E4C /* EpisodeTabInDetail */,
+				DD075BF4254AFD6500C12101 /* CharacterTab */,
+				DD075BF6254AFDE800C12101 /* CharacterTabInDetail */,
+				DDD4ABF52608B7BD001ADF86 /* EpisodesOdCharacterTab */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DD35626C2541C1010033669B = {
+			isa = PBXGroup;
+			children = (
+				DD3562772541C1010033669B /* Solvro_Project */,
+				DDC9C079260515EA0062676E /* Solvro_ProjectTests */,
+				DD3562762541C1010033669B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD3562762541C1010033669B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD3562752541C1010033669B /* Solvro_Project.app */,
+				DDC9C078260515EA0062676E /* Solvro_ProjectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD3562772541C1010033669B /* Solvro_Project */ = {
+			isa = PBXGroup;
+			children = (
+				DD1D8B42254F97DF00FB4E4C /* Model */,
+				DD1D8B3E254F976800FB4E4C /* View */,
+				DD1D8B44254F97FB00FB4E4C /* Controller */,
+				DD1D8B41254F97C500FB4E4C /* Core Data */,
+				DD1D8B3F254F97A500FB4E4C /* Supporting Files */,
+				DD3562842541C1040033669B /* Assets.xcassets */,
+				DD5FEEE22569E37C008020A3 /* Colour.xcassets */,
+				DD3562892541C1040033669B /* Info.plist */,
+				DD92C844256950AB001228D5 /* Localizable.strings */,
+			);
+			path = Solvro_Project;
+			sourceTree = "<group>";
+		};
+		DDC9C079260515EA0062676E /* Solvro_ProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDC9C07A260515EA0062676E /* Solvro_ProjectTests.swift */,
+				DDC9C07C260515EA0062676E /* Info.plist */,
+			);
+			path = Solvro_ProjectTests;
+			sourceTree = "<group>";
+		};
+		DDC9C086260519530062676E /* WelcomeTab */ = {
+			isa = PBXGroup;
+			children = (
+				DD075BF8254AFFE600C12101 /* WelcomeViewController.swift */,
+			);
+			path = WelcomeTab;
+			sourceTree = "<group>";
+		};
+		DDD4ABF52608B7BD001ADF86 /* EpisodesOdCharacterTab */ = {
+			isa = PBXGroup;
+			children = (
+				DDD4ABF62608B7F5001ADF86 /* EpisodeOfCharacterTableViewController.swift */,
+			);
+			path = EpisodesOdCharacterTab;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD3562742541C1010033669B /* Solvro_Project */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD35628C2541C1040033669B /* Build configuration list for PBXNativeTarget "Solvro_Project" */;
+			buildPhases = (
+				DD3562712541C1010033669B /* Sources */,
+				DD3562722541C1010033669B /* Frameworks */,
+				DD3562732541C1010033669B /* Resources */,
+				DD7B0D7225FFAC01003ACB6A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Solvro_Project;
+			packageProductDependencies = (
+				DD3562912541C2FE0033669B /* rick-morty-swift-api */,
+				DD3562A32541E3D60033669B /* Kingfisher */,
+			);
+			productName = Solvro_Project;
+			productReference = DD3562752541C1010033669B /* Solvro_Project.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDC9C077260515EA0062676E /* Solvro_ProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDC9C07F260515EA0062676E /* Build configuration list for PBXNativeTarget "Solvro_ProjectTests" */;
+			buildPhases = (
+				DDC9C074260515EA0062676E /* Sources */,
+				DDC9C075260515EA0062676E /* Frameworks */,
+				DDC9C076260515EA0062676E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDC9C07E260515EA0062676E /* PBXTargetDependency */,
+			);
+			name = Solvro_ProjectTests;
+			productName = Solvro_ProjectTests;
+			productReference = DDC9C078260515EA0062676E /* Solvro_ProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD35626D2541C1010033669B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					DD3562742541C1010033669B = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					DDC9C077260515EA0062676E = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = DD3562742541C1010033669B;
+					};
+				};
+			};
+			buildConfigurationList = DD3562702541C1010033669B /* Build configuration list for PBXProject "Solvro_Project" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD35626C2541C1010033669B;
+			packageReferences = (
+				DD3562902541C2FE0033669B /* XCRemoteSwiftPackageReference "rick-morty-swift-api" */,
+				DD3562A22541E3D60033669B /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = DD3562762541C1010033669B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD3562742541C1010033669B /* Solvro_Project */,
+				DDC9C077260515EA0062676E /* Solvro_ProjectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD3562732541C1010033669B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD3562882541C1040033669B /* LaunchScreen.storyboard in Resources */,
+				DD92C842256950AB001228D5 /* Localizable.strings in Resources */,
+				DD3562852541C1040033669B /* Assets.xcassets in Resources */,
+				DD5FEEE32569E37C008020A3 /* Colour.xcassets in Resources */,
+				DD3562802541C1010033669B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC9C076260515EA0062676E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DD7B0D7225FFAC01003ACB6A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#if which swiftlint >/dev/null; then\n#  swiftlint\n#else\n#  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n#fi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD3562712541C1010033669B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD20573F2543185700E5DE3B /* TableEpisodeViewController.swift in Sources */,
+				DD0FFF1A254CE3820080D5FF /* RickAndMortyDataModel.swift in Sources */,
+				DDD4ABF72608B7F5001ADF86 /* EpisodeOfCharacterTableViewController.swift in Sources */,
+				DD075BF9254AFFE600C12101 /* WelcomeViewController.swift in Sources */,
+				DD3562992541C9230033669B /* CharacterTableViewCell.swift in Sources */,
+				DD3562792541C1010033669B /* AppDelegate.swift in Sources */,
+				DD35629C2541D5A50033669B /* DetailViewController.swift in Sources */,
+				DD82839C25470B9A0093D252 /* Model.xcdatamodeld in Sources */,
+				DD1D8B2E254DF0F600FB4E4C /* DetailEpisodeTableViewController.swift in Sources */,
+				DD3562952541C65B0033669B /* TableViewController.swift in Sources */,
+				DD35627B2541C1010033669B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC9C074260515EA0062676E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC9C07B260515EA0062676E /* Solvro_ProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDC9C07E260515EA0062676E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD3562742541C1010033669B /* Solvro_Project */;
+			targetProxy = DDC9C07D260515EA0062676E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD35627E2541C1010033669B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD35627F2541C1010033669B /* Base */,
+				DD5FEEDC2569B51E008020A3 /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DD3562862541C1040033669B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD3562872541C1040033669B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DD92C844256950AB001228D5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD92C843256950AB001228D5 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD35628A2541C1040033669B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD35628B2541C1040033669B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD35628D2541C1040033669B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AM68G3R43K;
+				INFOPLIST_FILE = Solvro_Project/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jankrzempek.Solvro-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DD35628E2541C1040033669B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AM68G3R43K;
+				INFOPLIST_FILE = Solvro_Project/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jankrzempek.Solvro-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		DDC9C080260515EA0062676E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AM68G3R43K;
+				INFOPLIST_FILE = Solvro_ProjectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jankrzempek.Solvro-ProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Solvro_Project.app/Solvro_Project";
+			};
+			name = Debug;
+		};
+		DDC9C081260515EA0062676E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AM68G3R43K;
+				INFOPLIST_FILE = Solvro_ProjectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jankrzempek.Solvro-ProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Solvro_Project.app/Solvro_Project";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD3562702541C1010033669B /* Build configuration list for PBXProject "Solvro_Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD35628A2541C1040033669B /* Debug */,
+				DD35628B2541C1040033669B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD35628C2541C1040033669B /* Build configuration list for PBXNativeTarget "Solvro_Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD35628D2541C1040033669B /* Debug */,
+				DD35628E2541C1040033669B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDC9C07F260515EA0062676E /* Build configuration list for PBXNativeTarget "Solvro_ProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDC9C080260515EA0062676E /* Debug */,
+				DDC9C081260515EA0062676E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DD3562902541C2FE0033669B /* XCRemoteSwiftPackageReference "rick-morty-swift-api" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/benjaminbruch/rick-morty-swift-api";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		DD3562A22541E3D60033669B /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.15.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DD3562912541C2FE0033669B /* rick-morty-swift-api */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD3562902541C2FE0033669B /* XCRemoteSwiftPackageReference "rick-morty-swift-api" */;
+			productName = "rick-morty-swift-api";
+		};
+		DD3562A32541E3D60033669B /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD3562A22541E3D60033669B /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		DD82839A25470B9A0093D252 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DD82839B25470B9A0093D252 /* Model.xcdatamodel */,
+			);
+			currentVersion = DD82839B25470B9A0093D252 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DD35626D2541C1010033669B /* Project object */;
+}

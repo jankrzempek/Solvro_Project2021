@@ -1,0 +1,39 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "2fC-d5-Af8"; */
+"2fC-d5-Af8.text" = "Label";
+
+/* Class = "UILabel"; text = "Welcome in Solvro Project"; ObjectID = "9VT-wf-Km5"; */
+"9VT-wf-Km5.text" = "Welcome in Solvro Project";
+
+/* Class = "UITabBarItem"; title = "Characters"; ObjectID = "EFi-GM-JfJ"; */
+"EFi-GM-JfJ.title" = "Characters";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "FAq-Mx-aag"; */
+"FAq-Mx-aag.title" = "Item";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "LIm-L1-JY6"; */
+"LIm-L1-JY6.text" = "Label";
+
+/* Class = "UILabel"; text = "HELLO"; ObjectID = "QRq-do-2JY"; */
+"QRq-do-2JY.text" = "HELLO";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "SBV-Bx-Lce"; */
+"SBV-Bx-Lce.text" = "Label";
+
+/* Class = "UIViewController"; title = "DetailView"; ObjectID = "djc-rD-gue"; */
+"djc-rD-gue.title" = "DetailView";
+
+/* Class = "UILabel"; text = "Species:"; ObjectID = "duQ-6u-tw8"; */
+"duQ-6u-tw8.text" = "Species:";
+
+/* Class = "UILabel"; text = "Gender:"; ObjectID = "fGA-sV-1Bn"; */
+"fGA-sV-1Bn.text" = "Gender:";
+
+/* Class = "UITabBarItem"; title = "Episodes"; ObjectID = "hKA-j9-HVH"; */
+"hKA-j9-HVH.title" = "Episodes";
+
+/* Class = "UILabel"; text = "Status:"; ObjectID = "t0G-bH-9fD"; */
+"t0G-bH-9fD.text" = "Status:";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "zbQ-GI-eD6"; */
+"zbQ-GI-eD6.text" = "Label";

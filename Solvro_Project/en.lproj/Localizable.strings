@@ -1,0 +1,10 @@
+//String file with constants
+"DefaultTitleOfMainScreen" = "Default";
+"WelcomeText" = "Instruction: \n\n * Tap star button to show liked characters. \n\n * Like Characters, by tapping on their images. \n\n * Yellow border = liked. \n\n * Red border = neutral. \n\n * Sort by clicking on the left bar button item. \n\n * In search field you can search by episode title. \n\n * Searching through sorted array, shows only Characters connected with current sort option. \n\n * Have fun!";
+"CoreDataEntityName" = "SolvroModel";
+"DefaultTitle" = "Default";
+"ResultSearchControllerPlaceholder" = "Search by title";
+"AliveTitle" = "Alive";
+"DeadTitle" = "Dead";
+"UnknownTitle" = "unknown";
+"TitleOfCancelAlertInAction" = "Cancel";

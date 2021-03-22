@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Kingfisher",
+        "repositoryURL": "https://github.com/onevcat/Kingfisher.git",
+        "state": {
+          "branch": null,
+          "revision": "0e548b700c7c123dd3b2ac776e90d63a540f084d",
+          "version": "5.15.7"
+        }
+      },
+      {
+        "package": "rick-morty-swift-api",
+        "repositoryURL": "https://github.com/benjaminbruch/rick-morty-swift-api",
+        "state": {
+          "branch": "master",
+          "revision": "66f07d6e84b590f72e2b5e5284daf1a5d69b311d",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
