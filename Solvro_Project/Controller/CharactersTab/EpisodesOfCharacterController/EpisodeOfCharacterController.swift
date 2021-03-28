@@ -23,10 +23,10 @@ class EpisodeOfCharacterTableViewController: UITableViewController {
             cell.backgroundColor = .lightGray
         } else {
             cell.backgroundColor = .systemBackground
-            if traitCollection.userInterfaceStyle == .dark{
+            if traitCollection.userInterfaceStyle == .dark {
                 cell.textLabel?.textColor = .white
             }
         }
-        return cell
+    return cell
     }
 }
