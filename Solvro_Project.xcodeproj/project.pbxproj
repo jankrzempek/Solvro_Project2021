@@ -646,8 +646,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/benjaminbruch/rick-morty-swift-api";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = revision;
+				revision = 66f07d6e84b590f72e2b5e5284daf1a5d69b311d;
 			};
 		};
 		DD3562A22541E3D60033669B /* XCRemoteSwiftPackageReference "Kingfisher" */ = {

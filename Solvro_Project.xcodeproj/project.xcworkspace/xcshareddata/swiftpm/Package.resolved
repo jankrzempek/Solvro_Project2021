@@ -14,7 +14,7 @@
         "package": "rick-morty-swift-api",
         "repositoryURL": "https://github.com/benjaminbruch/rick-morty-swift-api",
         "state": {
-          "branch": "master",
+          "branch": null,
           "revision": "66f07d6e84b590f72e2b5e5284daf1a5d69b311d",
           "version": null
         }
