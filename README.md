@@ -1,5 +1,4 @@
 # Solvro_Project
-# ReadMe
 
 ## Introduction
 Podstawą aplikacji jest TabBarControoler, dzieli się on na Characters i Episodes. Większość funckjonalności aplikacji znajduję sie w kategorii Characters.
