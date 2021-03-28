@@ -1,24 +1,31 @@
 # Solvro_Project
 # ReadMe
 
-Podstawą aplikacji jest TabBarControoler, dzieli się on na Characters i Episodes. 
+## Introduction
+Podstawą aplikacji jest TabBarControoler, dzieli się on na Characters i Episodes. Większość funckjonalności aplikacji znajduję sie w kategorii Characters.
 
-Characters:
-  - Wyświetla wszyskich bohaterów
-  - W momencie naciśnięcia na daną komórkę przechodzimy do szczegółowego opisu postaci
-  - Za pomocą lewego przycisku znaajdującego się w NavigationBar, mamy możliwość posortowania postaci
-  - Za pomocą prawego przycisku znaajdującego się w NavigationBar, mamy możliwość pokazania polubionych postaci
-  - W momencie naciśnięcia na zdjęcie danej postaci możemy ją polubić, naciskając kolejno, odlubić
-  - Istanieje także możliwośc przeszukowania postaci ze względu na odcinek
-    - Jeśli jednak zaczniemy szukać w momencie "pokazywania polubionych" to szukamy postaci z danego odcinka tylko wśród ulunionych
-    - Jeśli jednak zaczniemy szukać w momenciensortowania, to szukamy postaci z danego odcinka tylko wśród tych posortowanych
-  - W momencie kiedy znajdujemy się w kategorii "ulubione" mamy możliwość posortowania ze względu na status
-  - W momencie kiedy wyświetlamy posortowane postaci, możemy nacisnąć "gwiazdkę" za pomocą której wyekstraktujemy i pokażemy tylko polubione
+## Methods Used
+  * Storyboard :white_check_mark:
+  * Kingfisher :white_check_mark:
   
+## Requirements
+  * Pobieranie i wyświetlanie listy postaci :heavy_check_mark:
+  * Kliknięcie postaci poowduje ukazanie jej szczegółów :heavy_check_mark:
+  * Mozliwość filtrowania :heavy_check_mark:
+  * Przeszukiwanie po nazwie odcinka :heavy_check_mark:
+  * CoreData w przypadku konieczności pobrania danych bez internetu :heavy_check_mark:
+  * Dodawanie postaci do ulubionych :heavy_check_mark:
+  * Wyświetlanie tylko ulubionych bohaterów :heavy_check_mark:
+  
+## Features
+  * Wyświetlanie odcinków danej postaci :boom:
+  * Kategoria Episodes skupiająca wszystkie odcinki w jedym miejscu :boom:
+  * Wyświetlanie w szczegółach postaci czy polubiona czy też nie :boom:
 
-Episodes:
- - Wyświetla wszystkie odcinki Rick and Morty 
- - Odcinki można przeszukiwać, po ich nazwie
- - W momencie naciśnięcia na daną komórkę przechodzimy do spisu postaci które w tym odcinku występują
+## Build process
+* Download a project
+* Try to use!
 
-W Aplikacji użyłem Core Data, jako bazę danych która przetrzymuje i wyświetla potrzebne dane w razie braku połączenia z internetem.
+## Acknowledgments
+Thanks to Solvro. 
+
