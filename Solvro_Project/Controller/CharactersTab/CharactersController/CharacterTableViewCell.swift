@@ -12,12 +12,10 @@ protocol MyCellDelegate: AnyObject {
 }
 
 class CharacterTableViewCell: UITableViewCell {
-
     weak var delegate: MyCellDelegate?
     var passedCellURL = ""
-    
     @IBOutlet weak var likedButton: UIButton!
-    @IBOutlet weak var nameLabelOfCharacter: UILabel!
+    @IBOutlet weak var nameOfCharacterLabel: UILabel!
     @IBOutlet weak var imageCellView: UIImageView!
     @IBAction func buttonTappedAction(_ sender: Any) {
         delegate?.buttonTapped(cell: self)
@@ -25,7 +23,6 @@ class CharacterTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }

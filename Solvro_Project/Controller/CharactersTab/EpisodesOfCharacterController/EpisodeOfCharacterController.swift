@@ -7,18 +7,23 @@
 import UIKit
 
 class EpisodeOfCharacterTableViewController: UITableViewController {
-    var episodesOfCharacter = [String]()
+    var episodesOfCharacterArray = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .lightGray
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return episodesOfCharacter.count
+        return episodesOfCharacterArray.count
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = episodesOfCharacter[indexPath.row]
-        cell.textLabel?.textColor = .white
-        cell.backgroundColor = .black
+        cell.textLabel?.text = episodesOfCharacterArray[indexPath.row]
+        cell.textLabel?.textColor = .black
+        if indexPath.row % 2 == 0 {
+            cell.backgroundColor = .lightGray
+        } else {
+            cell.backgroundColor = .systemBackground
+        }
         return cell
     }
 }

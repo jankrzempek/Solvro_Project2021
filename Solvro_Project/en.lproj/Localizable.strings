@@ -8,3 +8,5 @@
 "DeadTitle" = "Dead";
 "UnknownTitle" = "unknown";
 "TitleOfCancelAlertInAction" = "Cancel";
+"NavigationItemTitle" = "Getting Data";
+"EpisodesControllerNavigationItemTitle" = "Episodes";

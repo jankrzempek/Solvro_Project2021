@@ -6,31 +6,21 @@
 //
 
 import UIKit
-                                                       
-
 class EpisodesIsInTableViewController: UIViewController {
 
-    private let arrayWithData : [String]
-    
-    init(items : [String]){
+    private let arrayWithData: [String]
+    init(items: [String]) {
         self.arrayWithData = items
         super.init(nibName: nil, bundle: nil)
     }
-   
-    
-    
     var aaray = [String]()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-      
             tableView.dataSource = self
             tableView.delegate = self
-        
     }
 
     // MARK: - Table view data source
-
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return arrayWithData.count

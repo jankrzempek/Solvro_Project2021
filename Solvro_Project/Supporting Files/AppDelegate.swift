@@ -13,15 +13,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Decide is is the first run of the app or not
         let defaults = UserDefaults.standard
         if defaults.object(forKey: "isFirstTime") == nil {
             defaults.set("No", forKey: "isFirstTime")
-             let storyboard = UIStoryboard(name: "Main", bundle: nil) // Write your storyboard name
-            let viewController = storyboard.instantiateViewController(withIdentifier: "main") as! TableViewController
-            self.window?.rootViewController = viewController
-            self.window?.makeKeyAndVisible()
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let viewController = storyboard.instantiateViewController(withIdentifier: "main") as? TableViewController {
+                self.window?.rootViewController = viewController
+                self.window?.makeKeyAndVisible()
+            }
         }
         return true
     }
@@ -31,7 +33,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: UISceneSession Lifecycle
 
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
+    func application(_ application: UIApplication,
+                     configurationForConnecting connectingSceneSession: UISceneSession,
+                     options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
 

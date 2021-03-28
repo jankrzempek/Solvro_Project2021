@@ -6,8 +6,6 @@
 //
 
 import UIKit
-
-
 class LikedTableViewController: UITableViewController, LikedDelegate {
     func likedIsMade(data: Int) {
         print(data)

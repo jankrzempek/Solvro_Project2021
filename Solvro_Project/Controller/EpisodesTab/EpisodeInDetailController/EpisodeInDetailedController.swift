@@ -8,14 +8,13 @@
 import UIKit
 
 class DetailEpisodeTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
     private let tableView: UITableView = {
         let table = UITableView()
         table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         return table
     }()
-    private let items: [ModelOfRickAndMortyCharacterData]
-    init(items: [ModelOfRickAndMortyCharacterData]) {
+    private let items: [ModelOfRickAndMortyData]
+    init(items: [ModelOfRickAndMortyData]) {
         self.items = items
         super.init(nibName: nil, bundle: nil)
     }

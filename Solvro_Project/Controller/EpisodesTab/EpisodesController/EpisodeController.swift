@@ -9,28 +9,26 @@ import UIKit
 import rick_morty_swift_api
 
 class TableEpisodeViewController: UITableViewController, UISearchResultsUpdating {
-    // vars and lets
     var resultSearchController = UISearchController()
+    var filteredArray = [String]()
+    var episodesArray = [String]()
+    var charactersArray = [String]()
+    var outsourcedEpisodesArray = [String]()
+    var episodesArrayElements = [String.Element]()
+    var compleatedDataArray = [ModelOfRickAndMortyData]()
+    var extractedArray = [ModelOfRickAndMortyData]()
     let rickAndMortyClient = Client()
-    var filteredTableData = [String]()
-    var arrayCollectionWithEpisodes = [String]()
-    var arrayCollectionWithEpisodesCharacters = [String]()
-    var arrayCollectionWithCharacters = [String]()
-    var episodeNumber = [String.Element]()
-    var episodeNumberInString = ""
-    var takenArrayWithEpi = [String]()
-    var arrayWithFullData = [ModelOfRickAndMortyCharacterData]()
-    var extractArray = [ModelOfRickAndMortyCharacterData]()
     var isSorting = false
+    var episodeNumberInString = ""
     // ViewDiDLoad and Getting data from Api
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "Episodes"
+        navigationItem.title = (NSLocalizedString("EpisodesControllerNavigationItemTitle", comment: ""))
         self.rickAndMortyClient.episode().getAllEpisodes { result in
             switch result {
             case .success(let episodes):
                 episodes.forEach { episode in
-                    self.arrayCollectionWithEpisodes.append(episode.name)
+                    self.episodesArray.append(episode.name)
                 }
             case.failure(let error):
                 print(error)
@@ -42,8 +40,8 @@ class TableEpisodeViewController: UITableViewController, UISearchResultsUpdating
                 switch result {
                 case .success(let persons):
                     persons.forEach { person in
-                        self.arrayCollectionWithCharacters.append(person.name)
-                        var getCharacter = ModelOfRickAndMortyCharacterData(
+                        self.charactersArray.append(person.name)
+                        var getCharacter = ModelOfRickAndMortyData(
                             name: person.name,
                             identifier: person.id,
                             status: person.status,
@@ -60,21 +58,21 @@ class TableEpisodeViewController: UITableViewController, UISearchResultsUpdating
                             for items in 0...currentEpisodeURLArray.count-1 {
                                 let identifier = currentEpisodeURLArray[items].wholeNumberValue
                                 if 0...9 ~= identifier ?? -1 {
-                                    self.episodeNumber.append(currentEpisodeURLArray[items])
+                                    self.episodesArrayElements.append(currentEpisodeURLArray[items])
                                 }
                             }
-                            for items in 0...self.episodeNumber.count-1 {
-                                self.episodeNumberInString += String(self.episodeNumber[items])
+                            for items in 0...self.episodesArrayElements.count-1 {
+                                self.episodeNumberInString += String(self.episodesArrayElements[items])
                             }
                             let episodeNumberInInt = Int(self.episodeNumberInString)!
-                            self.takenArrayWithEpi.append(self.arrayCollectionWithEpisodes[episodeNumberInInt-1])
-                            self.episodeNumber = []
+                            self.outsourcedEpisodesArray.append(self.episodesArray[episodeNumberInInt-1])
+                            self.episodesArrayElements = []
                             self.episodeNumberInString = ""
                             currentEpisodeURLArray = []
                         }
-                        getCharacter.episode = self.takenArrayWithEpi
-                        self.arrayWithFullData.append(getCharacter)
-                        self.takenArrayWithEpi = []
+                        getCharacter.episode = self.outsourcedEpisodesArray
+                        self.compleatedDataArray.append(getCharacter)
+                        self.outsourcedEpisodesArray = []
                     }
                 case.failure(let error):
                     // if getting data from Api fails
@@ -96,17 +94,22 @@ class TableEpisodeViewController: UITableViewController, UISearchResultsUpdating
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if resultSearchController.isActive {
-            return filteredTableData.count
+            return filteredArray.count
         } else {
-            return arrayCollectionWithEpisodes.count
+            return episodesArray.count
         }
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseEpisodeCell")! as UITableViewCell
         if resultSearchController.isActive == true {
-            cell.textLabel?.text = filteredTableData[indexPath.row]
+            cell.textLabel?.text = filteredArray[indexPath.row]
         } else {
-            cell.textLabel?.text = arrayCollectionWithEpisodes[indexPath.row]
+            cell.textLabel?.text = episodesArray[indexPath.row]
+        }
+        if indexPath.row % 2 == 0 {
+            cell.backgroundColor = .lightGray
+        } else {
+            cell.backgroundColor = .systemBackground
         }
         return cell
     }
@@ -115,24 +118,25 @@ class TableEpisodeViewController: UITableViewController, UISearchResultsUpdating
         return 80
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let currentTitle = arrayCollectionWithEpisodes[indexPath.row]
-        for index in 0...arrayWithFullData.count-1 {
-            let currentCharacter = arrayWithFullData[index]
-            for indexInter in 0...currentCharacter.episode.count-1 where currentCharacter.episode[indexInter] == currentTitle {
-                    extractArray.append(currentCharacter)
-                }
+        let currentTitle = episodesArray[indexPath.row]
+        for index in 0...compleatedDataArray.count-1 {
+            let currentCharacter = compleatedDataArray[index]
+            for indexInter in 0...currentCharacter.episode.count-1
+            where currentCharacter.episode[indexInter] == currentTitle {
+                extractedArray.append(currentCharacter)
             }
-        let viewController = DetailEpisodeTableViewController(items: extractArray)
+        }
+        let viewController = DetailEpisodeTableViewController(items: extractedArray)
         viewController.title = "Characters"
         navigationController?.pushViewController(viewController, animated: true)
-        extractArray = []
+        extractedArray = []
     }
-// MARK: - Search Field Logic
-func updateSearchResults(for searchController: UISearchController) {
-    filteredTableData.removeAll(keepingCapacity: false)
-    let searchPredicate = NSPredicate(format: "SELF CONTAINS[c] %@", searchController.searchBar.text!)
-    let array = (arrayCollectionWithEpisodes as NSArray).filtered(using: searchPredicate)
-    filteredTableData = (array as? [String])!
-    self.tableView.reloadData()
-}
+    // MARK: - Search Field Logic
+    func updateSearchResults(for searchController: UISearchController) {
+        filteredArray.removeAll(keepingCapacity: false)
+        let searchPredicate = NSPredicate(format: "SELF CONTAINS[c] %@", searchController.searchBar.text!)
+        let array = (episodesArray as NSArray).filtered(using: searchPredicate)
+        filteredArray = (array as? [String])!
+        self.tableView.reloadData()
+    }
 }

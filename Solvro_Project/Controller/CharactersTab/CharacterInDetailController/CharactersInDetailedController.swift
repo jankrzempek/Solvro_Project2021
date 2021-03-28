@@ -17,21 +17,18 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var nameOfCharacterInDetail: UILabel!
     @IBOutlet weak var getEpisodesButton: UIButton!
     let rickAndMortyClient = Client()
-    var textWithName = ""
-    var indexOfCurrentChoice = 0
+    var characterName = ""
+    var indexOfCurrentCharacter = 0
     var currentCharacterImage = ""
     var dataOfCreation = ""
     var genderOfCurrentCharacter = ""
     var statusOfCurrentCharacter = ""
-    var episodesHeIn = [String]()
+    var characterEpisodesArray = [String]()
     var isLiked = false
-    var getArray = [String]()
-    let vsE = EpisodeOfCharacterTableViewController()
     override func viewDidLoad() {
         super.viewDidLoad()
         getEpisodesButton.setTitleColor(UIColor.white, for: .normal)
         getEpisodesButton.layer.cornerRadius = 8
-        getArray = episodesHeIn
         imageForCurrentCharacter.layer.masksToBounds = true
         imageForCurrentCharacter.layer.borderWidth = 5
         imageForCurrentCharacter.layer.cornerRadius = imageForCurrentCharacter.frame.size.height/2
@@ -40,7 +37,7 @@ class DetailViewController: UIViewController {
         } else {
             imageForCurrentCharacter.layer.borderColor = UIColor(named: "dislikeColour" )?.cgColor
         }
-        self.nameOfCharacterInDetail.text = self.textWithName
+        self.nameOfCharacterInDetail.text = self.characterName
         self.genderLabel.text = self.genderOfCurrentCharacter
         self.currentStatusLabel.text = self.statusOfCurrentCharacter
         self.dataOfCreationLabel.text = self.dataOfCreation
@@ -61,11 +58,10 @@ class DetailViewController: UIViewController {
             break
         }
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
-    {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.destination is EpisodeOfCharacterTableViewController {
-            let vc = segue.destination as? EpisodeOfCharacterTableViewController
-            vc?.episodesOfCharacter = episodesHeIn
+            let viewController = segue.destination as? EpisodeOfCharacterTableViewController
+            viewController?.episodesOfCharacterArray = characterEpisodesArray
         }
     }
 }

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zVh-eZ-TAH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zVh-eZ-TAH">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18092"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -38,10 +38,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="reuseEpisodeCell" id="Uye-Dz-k3U" customClass="TableViewCell" customModule="Solvro_Project" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Uye-Dz-k3U" id="l59-Kn-hrv" customClass="EpisodeTableViewCell" customModule="Solvro_Project" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="384.5" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -104,7 +104,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="T5N-Yl-eDO"/>
                     <connections>
-                        <outlet property="instructionHowToUseLabel" destination="1cJ-bk-Jdp" id="VyG-r9-Q2A"/>
+                        <outlet property="instructionLabel" destination="1cJ-bk-Jdp" id="VyG-r9-Q2A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zq1-Ea-G8V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -121,14 +121,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="reuseCell" rowHeight="120" id="i4L-es-jeq" customClass="CharacterTableViewCell" customModule="Solvro_Project" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="24.5" width="414" height="120"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="i4L-es-jeq" id="2JL-jH-hsv" customClass="TableViewCell" customModule="Solvro_Project" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="384.5" height="120"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="383" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AoL-oT-chd">
-                                            <rect key="frame" x="0.0" y="0.0" width="374.5" height="120"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="373" height="120"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyu-7Y-a9n">
                                                     <rect key="frame" x="16" y="19" width="115" height="84"/>
@@ -140,7 +140,7 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBV-Bx-Lce">
-                                                    <rect key="frame" x="164" y="0.0" width="212.5" height="120"/>
+                                                    <rect key="frame" x="164" y="0.0" width="211" height="120"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="203" id="JOu-6B-7wJ"/>
                                                     </constraints>
@@ -181,7 +181,7 @@
                                 <connections>
                                     <outlet property="imageCellView" destination="uX1-Rv-OPE" id="bwd-A7-iFF"/>
                                     <outlet property="likedButton" destination="qyu-7Y-a9n" id="Vpm-zx-mcB"/>
-                                    <outlet property="nameLabelOfCharacter" destination="SBV-Bx-Lce" id="3PD-Gc-Zbc"/>
+                                    <outlet property="nameOfCharacterLabel" destination="SBV-Bx-Lce" id="3PD-Gc-Zbc"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -204,7 +204,7 @@
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="showLikedOutlet" destination="FAq-Mx-aag" id="YEg-G2-cse"/>
+                        <outlet property="showLikedButton" destination="FAq-Mx-aag" id="YEg-G2-cse"/>
                         <outlet property="sortButton" destination="SW6-qy-epy" id="WeQ-97-wtt"/>
                     </connections>
                 </tableViewController>
@@ -301,7 +301,7 @@
                                 <rect key="frame" x="120" y="817" width="174" height="30"/>
                                 <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                 <color key="tintColor" systemColor="systemBackgroundColor"/>
-                                <state key="normal" title="Get Episodes">
+                                <state key="normal" title="Character episodes">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
                                 <connections>
@@ -359,7 +359,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="bwA-fE-Zqi">
-                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bwA-fE-Zqi" id="kUQ-9k-FY8">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>

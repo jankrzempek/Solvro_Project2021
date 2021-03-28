@@ -8,7 +8,7 @@
 import Foundation
 // struct which represent Api's data
 
-struct ModelOfRickAndMortyCharacterData {
+struct ModelOfRickAndMortyData {
     var name: String
     var identifier: Int
     var status: String

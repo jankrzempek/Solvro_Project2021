@@ -19,10 +19,15 @@ class SolvroProjectTests: XCTestCase {
     }
 
     func testRikAndDataModel() {
-        let data = ModelOfRickAndMortyCharacterData(name: "Rick", identifier: 1, status: "Alive", imageURL: "http://image.png/", data: "12-04-2020", gender: "Male", episode: ["X", "Y", "Z"], like: true)
-        
+        let data = ModelOfRickAndMortyData(name: "Rick",
+                                           identifier: 1,
+                                           status: "Alive",
+                                           imageURL: "http://image.png/",
+                                           data: "12-04-2020",
+                                           gender: "Male",
+                                           episode: ["X", "Y", "Z"],
+                                           like: true)
         XCTAssertTrue(data.like)
         XCTAssertEqual(data.name, "Rick")
-        
     }
 }

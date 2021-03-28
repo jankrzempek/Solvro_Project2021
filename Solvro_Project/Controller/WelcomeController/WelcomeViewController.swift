@@ -8,10 +8,10 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
-    @IBOutlet weak var instructionHowToUseLabel: UILabel!
+    @IBOutlet weak var instructionLabel: UILabel!
     // View that pop ups only ones at the start
     override func viewDidLoad() {
         super.viewDidLoad()
-        instructionHowToUseLabel.text = (NSLocalizedString("WelcomeText", comment: ""))
+        instructionLabel.text = (NSLocalizedString("WelcomeText", comment: ""))
     }
 }
