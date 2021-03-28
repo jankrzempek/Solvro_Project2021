@@ -338,16 +338,16 @@ class TableViewController: UITableViewController,
                                         case true:
                                             self.likedArray = []
                                             for index in 0...self.arrayWithFullData.count-1 where
-                                            self.arrayWithFullData[index].status == (NSLocalizedString("AliveTitle", comment: ""))
+                                                self.arrayWithFullData[index].status == (NSLocalizedString("AliveTitle", comment: ""))
                                                 && self.arrayWithFullData[index].like == true {
-                                                    self.sortedArray.append(self.arrayWithFullData[index])
-                                                    self.likedArray.append(self.arrayWithFullData[index])
+                                                self.sortedArray.append(self.arrayWithFullData[index])
+                                                self.likedArray.append(self.arrayWithFullData[index])
                                             }
                                         case false:
                                             for index in 0...self.arrayWithFullData.count-1 where
-                                            self.arrayWithFullData[index].status == (NSLocalizedString("AliveTitle", comment: "")) {
-                                                    self.sortedArray.append(self.arrayWithFullData[index])
-                                                }
+                                                self.arrayWithFullData[index].status == (NSLocalizedString("AliveTitle", comment: "")) {
+                                                self.sortedArray.append(self.arrayWithFullData[index])
+                                            }
                                         }
                                         self.isSorting = true
                                         self.tableView.reloadData()
@@ -363,13 +363,13 @@ class TableViewController: UITableViewController,
                                             for index in 0...self.arrayWithFullData.count-1 where
                                                 self.arrayWithFullData[index].status == (NSLocalizedString("DeadTitle", comment: ""))
                                                 && self.arrayWithFullData[index].like == true {
-                                                    self.sortedArray.append(self.arrayWithFullData[index])
-                                                    self.likedArray.append(self.arrayWithFullData[index])
-                                                }
+                                                self.sortedArray.append(self.arrayWithFullData[index])
+                                                self.likedArray.append(self.arrayWithFullData[index])
+                                            }
                                         case false:
                                             for index in 0...self.arrayWithFullData.count-1 where
                                                 self.arrayWithFullData[index].status == (NSLocalizedString("DeadTitle", comment: "")) {
-                                                    self.sortedArray.append(self.arrayWithFullData[index])
+                                                self.sortedArray.append(self.arrayWithFullData[index])
                                             }
                                         }
                                         self.isSorting = true
